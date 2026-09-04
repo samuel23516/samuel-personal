@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.7;
+}
+
+.sample {
+    background: linear-gradient(135deg, #111, #333);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.sample h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.sample p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.tom {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.sam {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.sam h2 {
+    color: #222;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.sam p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.profile {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.profile img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Kahindi {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.Kahindi h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+    border-left: 5px solid #555;
+    padding-left: 12px;
+}
+
+.Kahindi p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.more-link {
+    display: inline-block;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    transition: 0.3s;
+}
+
+.more-link:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 35px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+footer p {
+    color: #ccc;
+    margin-bottom: 12px;
+}
+
+footer strong {
+    color: white;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 25px 0;
+}
+
+@media (max-width: 600px) {
+    .sample {
+        padding: 40px 15px;
+    }
+
+    .sample h1 {
+        font-size: 28px;
+    }
+
+    .sample p {
+        font-size: 16px;
+    }
+
+    .tom {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    .sam,
+    .Kahindi,
+    footer {
+        padding: 25px 20px;
+    }
+
+    .sam h2 {
+        font-size: 21px;
+    }
+
+    .Kahindi h2 {
+        font-size: 24px;
+    }
+
+    .profile img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .more-link {
+        width: 100%;
+        text-align: center;
+    }
+}
