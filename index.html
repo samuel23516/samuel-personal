@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday My Love ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="hearts"></div>
+
+    <!-- MUSIC -->
+<audio id="birthdaySong" loop preload="auto">
+    <source src="record.1.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+
+    <!-- ================= WELCOME ================= -->
+
+    <section class="page active" id="welcome">
+
+        <div class="welcome-content">
+
+            <p class="small-text">A little surprise for someone special...<br><br>
+              KAMAMUUU..SYLVIA KASENDI.❤️❤️❤️❤️</p>
+
+            <h1>
+                Hey Beautiful
+                <span>😍</span>
+            </h1>
+
+            <p class="intro">
+                Today isn't just another day...
+                It's the day someone very special to my heart was born...12/9/****
+            </p>
+
+            <button class="main-btn" onclick="showSection('question')">
+                Start My Surprise ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUESTION ================= -->
+
+    <section class="page" id="question">
+
+        <div class="card">
+
+            <div class="emoji">🥹❤️</div>
+
+            <h2>Before we continue...</h2>
+
+            <p>
+                I have one very important question for you.
+            </p>
+
+            <h3>
+                Do you know how much I love you?
+            </h3>
+
+            <div class="buttons">
+
+                <button class="yes-btn" onclick="answerYes()">
+                    YES ❤️
+                </button>
+
+                <button class="no-btn" id="noButton">
+                    NO 😏
+                </button>
+
+            </div>
+
+            <p id="questionMessage" class="message"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= YES MESSAGE ================= -->
+
+    <section class="page" id="yesMessage">
+
+        <div class="card">
+
+            <div class="big-heart">❤️</div>
+
+            <h1>I knew it! 😍</h1>
+
+            <p>
+                Because if you didn't know before...
+                you're about to find out.
+            </p>
+
+            <p>
+                Keep going, birthday girl. ❤️
+            </p>
+
+            <button class="main-btn" onclick="showSection('memories')">
+                Show Me The Memories 📸
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="page" id="memories">
+
+        <div class="section-content">
+
+            <p class="small-text">A little trip down memory lane...</p>
+
+            <h1>Our Beautiful Memories ❤️</h1>
+
+            <p class="section-intro">
+                Every picture has a story.
+                And every story is a memory I never want to forget.
+            </p>
+
+
+            <div class="gallery">
+
+                <div class="photo-card">
+                    <img src="sam.png" alt="My picture">
+                    <div class="photo-text">
+                        <h3>Kamamuuu..❤️</h3>
+                        <p>The lucky guy behind this surprise.</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="love.png" alt="Love">
+                    <div class="photo-text">
+                        <h3>Love ❤️</h3>
+                        <p>The little thing that turned into something beautiful.</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="you.png" alt="You">
+                    <div class="photo-text">
+                        <h3>You 😍</h3>
+                        <p>My favorite person.</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="us.png" alt="Us">
+                    <div class="photo-text">
+                        <h3>Us ❤️</h3>
+                        <p>My favorite team.</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="name.png" alt="Name">
+                    <div class="photo-text">
+                        <h3>KAMAMUUU... 💕</h3>
+                        <p>A name that means a lot to me.</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="save.png" alt="Memory">
+                    <div class="photo-text">
+                        <h3>To my 15 unborn kids.💾❤️</h3>
+                        <p>Napenda mama yenuu.</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="mom.png" alt="Mom">
+                    <div class="photo-text">
+                        <h3>It's You. ❤️</h3>
+                        <p>My storyteller.</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="house.png" alt="Home">
+                    <div class="photo-text">
+                        <h3>❤️</h3>
+                        <p>Where beautiful memories begin.</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="wave.png" alt="Wave">
+                    <div class="photo-text">
+                        <h3>Beautiful Moments 🌊</h3>
+                        <p>Just like waves, memories keep coming back.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button class="main-btn" onclick="showSection('reasons')">
+                Why I Love You ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REASONS ================= -->
+
+    <section class="page" id="reasons">
+
+        <div class="card reason-card">
+
+            <div class="emoji">💕</div>
+
+            <p class="small-text">Reason number...</p>
+
+            <div id="reasonNumber">1</div>
+
+            <h1 id="reasonTitle">
+                Your Smile
+            </h1>
+
+            <p id="reasonText">
+                Your smile can make an ordinary day feel special.
+            </p>
+
+            <button class="main-btn" onclick="nextReason()">
+                Give Me Another Reason 💕
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MUSIC ================= -->
+
+    <section class="page" id="music">
+
+        <div class="card music-card">
+
+            <div class="music-icon">🎵</div>
+
+            <p class="small-text">
+                This one is for us...
+            </p>
+
+            <h1>Our Song ❤️</h1>
+
+            <p>
+                Some songs are just songs.
+                But some songs become memories.
+            </p>
+
+            <div class="song-box">
+
+                <div class="record">
+                    💿
+                </div>
+
+                <h>Your Today's Special Song</h2>
+
+                <p>Record.1 🎶</p>
+
+                <button class="play-song" onclick="toggleMusic()" id="songButton">
+                    ▶ Play Song
+                </button>
+
+            </div>
+
+            <p class="song-message">
+                Close your eyes for a moment...
+                and just listen. ❤️
+            </p>
+
+            <button class="main-btn" onclick="showSection('foreverQuestion')">
+                One More Question 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOREVER QUESTION ================= -->
+
+    <section class="page" id="foreverQuestion">
+
+        <div class="card">
+
+            <div class="emoji">🥰</div>
+
+            <h1>One Last Question...</h1>
+
+            <p>
+                Will you keep making beautiful memories with me,
+              and have 15kids with me.
+            
+            </p>
+
+            <div class="buttons">
+
+                <button class="yes-btn" onclick="foreverYes()">
+                    YES ❤️
+                </button>
+
+                <button class="no-btn" id="foreverNo">
+                    NO 😈
+                </button>
+
+            </div>
+
+            <p id="foreverMessage" class="message"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOREVER MESSAGE ================= -->
+
+    <section class="page" id="forever">
+
+        <div class="card">
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+            <h1>Then it's a deal! 🥹</h1>
+
+            <p>
+                More laughter.
+            </p>
+
+            <p>
+                More adventures.
+            </p>
+
+            <p>
+                More memories.
+            </p>
+
+            <p>
+                More love.
+            </p>
+          <p>
+            Give me 15 kids.
+          </p>
+
+            <p>
+                More <strong>US.</strong> ❤️
+            </p>
+
+            <button class="main-btn" onclick="showSection('gift')">
+                I Have One Last Surprise 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GIFT ================= -->
+
+    <section class="page" id="gift">
+
+        <div class="card">
+
+            <p class="small-text">
+                Your final surprise...
+            </p>
+
+            <h1>Open Your Gift 🎁</h1>
+
+            <div class="gift" onclick="openGift()" id="giftBox">
+                🎁
+            </div>
+
+            <p id="giftInstruction">
+                Tap the gift ❤️
+            </p>
+
+            <div id="giftMessage" class="hidden">
+
+                <h2>
+                    You Are My Favorite Person ❤️
+                </h2>
+
+                <p>
+                    If I could give you one thing today,
+                    it would be the ability to see yourself
+                    through my eyes...
+                </p>
+
+                <p>
+                    Then you would understand just how
+                    special you really are. 🥹❤️
+                </p>
+
+                <button class="main-btn" onclick="showSection('birthday')">
+                    My Birthday Message 🎂
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BIRTHDAY ================= -->
+
+    <section class="page birthday-page" id="birthday">
+
+        <div class="birthday-content">
+
+            <div class="cake">
+                🎂
+            </div>
+
+            <p class="small-text">
+                And finally...
+            </p>
+
+            <h1>
+                HAPPY BIRTHDAY
+            </h1>
+
+            <h2>
+                MY LOVE ❤️
+            </h2>
+
+            <div class="birthday-message">
+
+                <p>
+                    Happy Birthday to the beautiful girl
+                    who has made my world a little brighter.
+                </p>
+
+                <p>
+                    I hope this new chapter brings you
+                    happiness, peace, success and everything
+                    your heart wishes for.
+                </p>
+
+                <p>
+                    Thank you for being you.
+                </p>
+
+                <p>
+                    Thank you for the smiles,
+                    the memories, the conversations,
+                    and all the little moments.
+                </p>
+
+                <p>
+                    Here's to more beautiful memories,
+                    more laughter and more adventures together.
+                </p>
+
+                <h3>
+                    Happy Birthday, Beautiful. ❤️
+                </h3>
+
+                <p class="signature">
+                    — With love, Samuel Kahindi ❤️
+                </p>
+
+            </div>
+
+            <button class="main-btn" onclick="celebrate()">
+                Celebrate! 🎉
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
